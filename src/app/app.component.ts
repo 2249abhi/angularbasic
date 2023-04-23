@@ -18,7 +18,10 @@ C:\xampp\htdocs\blog\tsconfig.json
   getName(fname:string,lname:string){
     console.log(fname+' '+lname);
     alert('Hello '+fname+' '+lname);
-    
-    
+  }
+
+  getData(val:string)
+  {
+    console.warn(val);
   }
 }
