@@ -24,4 +24,10 @@ C:\xampp\htdocs\blog\tsconfig.json
   {
     console.warn(val);
   }
+
+  count=0;
+  counter(type:string)
+  {
+    (type == 'add') ? this.count++ : this.count--;
+  }
 }

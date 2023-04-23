@@ -1,6 +1,10 @@
 <h1>Hello Angular {{title}}</h1>
 <app-user-list></app-user-list>
 <app-sign-in></app-sign-in>
-<button (click)="getName('abhi','shri')">Click here</button><br />
-<button (click)="getData('test')">get data</button><br />
+<button (click)="getName('abhi','shri')">Click here</button><br /><br />
+<button (click)="getData('test')">get data</button><br /><br />
 <input type="text" #box (keydown)="getData(box.value)" placeholder="on key up" />
+<br /><br />
+<button (click)="counter('add')">++</button><br />
+<p>Count: {{count}}</p>
+<button (click)="counter('min')">--</button><br />
