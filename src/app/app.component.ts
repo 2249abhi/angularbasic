@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+//added
+import {UsersDataService} from './services/users-data.service';
 
 @Component({
   selector: 'app-root',
@@ -30,4 +32,17 @@ C:\xampp\htdocs\blog\tsconfig.json
   {
     (type == 'add') ? this.count++ : this.count--;
   }
+
+  //service
+  serviceTitle="API Service in angular";
+  users:any;
+  constructor(private userData:UsersDataService)
+  {
+    userData.users().subscribe((data)=>{
+      console.warn('data',data);
+      this.users=data;
+    });
+    
+  }
+
 }

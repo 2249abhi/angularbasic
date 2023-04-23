@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 //--------------------
 command to run project: ng serve
+
+service command:ng generate service services/usersData
+youtube link: https://www.youtube.com/watch?v=cicEKnluVf8&list=PL8p2I9GklV45--5t7_N4lveUI6Y31vQ6C&index=49
